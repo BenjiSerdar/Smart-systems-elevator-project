@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Smart Park (VSP)</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            background-color: #333;
+            padding: 10px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .cta-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta-btn:hover {
+            background-color: #0056b3;
+        }
+        .features-grid {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .features-grid div {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Vertical Smart Park (VSP)</h1>
+        <p>Your Innovative Space-Saving & Secure Parking Solution</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home / Hero Section -->
+    <section id="home">
+        <h2>Welcome to Vertical Smart Park</h2>
+        <p>We provide space-efficient, secure, and automated parking solutions that make parking easier and safer.</p>
+        <a href="#how-it-works" class="cta-btn">Learn More</a>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h2>How Vertical Smart Park Works</h2>
+        <p>Our advanced elevator system lifts your vehicle to a designated parking shelf, maximizing space usage and providing enhanced safety.</p>
+        <p>Watch the process in action:</p>
+        <video controls>
+            <source src="Elevator.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div style="margin-top: 20px;">
+            <a href="#features" class="cta-btn">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Key Features of VSP</h2>
+        <div class="features-grid">
+            <div>
+                <h3>Space Efficiency</h3>
+                <p>Our elevator system allows for more cars to be parked in less space, reducing the need for expansive parking lots.</p>
+            </div>
+            <div>
+                <h3>Safety First</h3>
+                <p>Automated system minimizes human error and enhances vehicle security with controlled access and monitoring.</p>
+            </div>
+            <div>
+                <h3>User-Friendly</h3>
+                <p>Reserve your spot easily with our intuitive booking system. Drive in and let VSP handle the rest!</p>
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <a href="#pricing" class="cta-btn">Check Pricing</a>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2>Our Pricing Plans</h2>
+        <p>Choose a plan that suits your needs. We offer flexible pricing options for individuals, businesses, and frequent users.</p>
+        <div class="features-grid">
+            <div>
+                <h3>Basic Plan</h3>
+                <p>Perfect for occasional parkers. 40kr/hour or $25/day.</p>
+                <a href="#contact" class="cta-btn">Get Started</a>
+            </div>
+            <div>
+                <h3>Standard Plan</h3>
+                <p>Ideal for regular users. 700kr/month with unlimited access.</p>
+                <a href="#contact" class="cta-btn">Sign Up</a>
+            </div>
+            <div>
+                <h3>Business Plan</h3>
+                <p>Customizable parking solutions for businesses. Contact us for pricing.</p>
+                <a href="#contact" class="cta-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to get started with Vertical Smart Park? Fill out the form below or give us a call.</p>
+        <form action="submit_form.php" method="POST" style="text-align: left; max-width: 600px; margin: 0 auto;">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required style="width: 100%; padding: 10px; height: 100px; margin-bottom: 10px;"></textarea><br>
+
+            <button type="submit" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; cursor: pointer;">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Vertical Smart Park. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
