@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>  <!-- Html Document --> 
+<html lang="en"> <!-- Settin the language as english -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertical Smart Park (VSP)</title>
+    <meta charset="UTF-8">      <!-- What keyboard/letters we are using -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes the webapgae "fill the screen" -->
+    <title>Vertical Smart Park (VSP)</title> <!-- Title --> 
     <style>
-        
-        body {
+        body { 
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f4f4f4; 
         }
         header {
             background-color: #007BFF;
@@ -82,19 +81,22 @@
         }
         
     </style>
+    <!-- I cannot comment inside of the style section without getting error codes,
+     but all of this is visual coding. Everything from backround colours to what font to how big the borders are.
+     There are also different sizes and placements and hovering over buttons --> 
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>Vertical Smart Park (VSP)</h1>
-        <p>Your Innovative Space-Saving & Secure Parking Solution</p>
+        <h1>Vertical Smart Park (VSP)</h1> <!-- Header --> 
+        <p>Your Innovative Space-Saving & Secure Parking Solution</p> <!--paragraph --> 
     </header>
 
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Home</a></li> <!-- All of these are buttons --> 
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#pricing">Pricing</a></li>
@@ -102,11 +104,11 @@
         </ul>
     </nav>
 
-    <!-- Home / Hero Section -->
-    <section id="home">
-        <h2>Welcome to Vertical Smart Park</h2>
+    <!-- Home Section -->
+    <section id="home">  <!-- Section id --> 
+        <h2>Welcome to Vertical Smart Park</h2> <!-- Header and paragraph again --> 
         <p>We provide space-efficient, secure, and automated parking solutions that make parking easier and safer.</p>
-        <a href="#how-it-works" class="cta-btn">Learn More</a>
+        <a href="#how-it-works" class="cta-btn">Learn More</a> <!-- Button that takes you to next section --> 
     </section>
 
     <!-- How It Works Section -->
@@ -115,20 +117,19 @@
         <p>Our advanced elevator system lifts your vehicle to a designated parking shelf, maximizing space usage and providing enhanced safety.</p>
         <p>Watch the process in action:</p>
         <video controls>
-            <source src="Elevator.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            <source src="Elevator.mp4" type="video/mp4"> <!-- Link to video --> 
         </video>
-        <div style="margin-top: 20px;">
-            <a href="#features" class="cta-btn">Explore Features</a>
+        <div style="margin-top: 20px;"> <!-- Style for button --> 
+            <a href="#features" class="cta-btn">Explore Features</a> <!-- Button that takes you to next section --> 
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features">
+    <section id="features">  
         <h2>Key Features of VSP</h2>
-        <div class="features-grid">
+        <div class="features-grid"> <!-- div divides into different pieces --> 
             <div>
-                <h3>Space Efficiency</h3>
+                <h3>Space Efficiency</h3> <!-- Then more headers and paragraphs --> 
                 <p>Our elevator system allows for more cars to be parked in less space, reducing the need for expansive parking lots.</p>
             </div>
             <div>
@@ -140,7 +141,7 @@
                 <p>Reserve your spot easily with our intuitive booking system. Drive in and let VSP handle the rest!</p>
             </div>
         </div>
-        <div style="margin-top: 20px;">
+        <div style="margin-top: 20px;"> <!-- Button that takes you to next section --> 
             <a href="#pricing" class="cta-btn">Check Pricing</a>
         </div>
     </section>
@@ -149,7 +150,8 @@
     <section id="pricing">
         <h2>Our Pricing Plans</h2>
         <p>Choose a plan that suits your needs. We offer flexible pricing options for individuals, businesses, and frequent users.</p>
-        <div class="features-grid">
+        <div class="features-grid"> <!-- This section isn't much different with then the above one.
+            was originally planning to somehow integrate the database here, but the idea was scratched--> 
             <div>
                 <h3>Basic Plan</h3>
                 <p>Perfect for occasional parkers. 40kr/hour or $25/day.</p>
@@ -163,7 +165,7 @@
             <div>
                 <h3>Business Plan</h3>
                 <p>Customizable parking solutions for businesses. Contact us for pricing.</p>
-                <a href="#contact" class="cta-btn">Contact Us</a>
+                <a href="#contact" class="cta-btn">Contact Us</a> <!-- Button that takes you to next section --> 
             </div>
         </div>
     </section>
